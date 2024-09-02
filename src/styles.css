@@ -2,6 +2,88 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+@layer reset, primeng;
+@layer reset {
+  button {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+:root {
+  --wewak-50: #fdf3f4;
+  --wewak-100: #fbe8eb;
+  --wewak-200: #f6d5da;
+  --wewak-300: #ea9daa;
+  --wewak-400: #e58799;
+  --wewak-500: #d75c77;
+  --wewak-600: #c13d60;
+  --wewak-700: #a22e4f;
+  --wewak-800: #882947;
+  --wewak-900: #752642;
+  --wewak-950: #411020;
+}
+
+.custom-button .p-button {
+  background-color: var(--wewak-600);
+  color: var(--wewak-50);
+  border-color: var(--wewak-600);
+}
+
+.custom-button .p-button:hover {
+  background-color: var(--wewak-700);
+  border-color: var(--wewak-700);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
