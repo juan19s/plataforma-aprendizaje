@@ -7,8 +7,15 @@
 
   <app-categories-card class="grid grid-cols-5 gap-4 mb-8" />
 
-  <div class="flex justify-between">
-    <p class="text-2xl font-bold mb-4">Reseñas populares</p>
-    <p-button label="Ver todas" [outlined]="true" severity="secondary" />
+  <div class="flex justify-between mb-8">
+    <p class="text-2xl font-bold">Reseñas populares</p>
+    <p-button
+      label="Ver todas"
+      [text]="true"
+      [raised]="true"
+      severity="secondary"
+    />
   </div>
+
+  <app-card-review class="grid grid-cols-1 gap-4 mb-8" />
 </main>

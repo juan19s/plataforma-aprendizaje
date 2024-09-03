@@ -1,0 +1,35 @@
+@for (review of reviews; track review) {
+<div class="grid grid-cols-12 gap-x-4 items-center mb-4">
+  <img
+    [src]="review.image"
+    alt="Card Image"
+    class="col-span-1 w-20 h-20 rounded-full object-cover"
+  />
+
+  <div class="col-span-3 text-sm">
+    <p>{{ review.person }}</p>
+    <p>{{ review.position }}</p>
+  </div>
+
+  <p-rating
+    [(ngModel)]="review.starring"
+    [cancel]="false"
+    class="col-span-3"
+  ></p-rating>
+
+  <p-badge
+    [value]="review.categorie"
+    class="custom-badge col-span-3"
+    styleClass="bg-wewak-500 text-white"
+    severity="secondary"
+  ></p-badge>
+
+  <p-button
+    label="Ver curso"
+    [outlined]="true"
+    severity="contrast"
+    class="col-span-2"
+    styleClass="p-2"
+  />
+</div>
+}
