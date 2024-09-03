@@ -1,1 +1,13 @@
-<p>categories-card works!</p>
+@for (card of cards; track card) {
+<div class="flex flex-col justify-between items-center border border-red-500">
+  <img
+    [src]="card.image"
+    alt="Card Image"
+    class="w-32 h-32 rounded-full object-cover"
+  />
+  <p class="text-xl mt-4">
+    {{ card.title }}
+  </p>
+</div>
+
+}

@@ -1,9 +1,14 @@
 <main>
-  <h1 class="text-2xl font-bold mb-3">Continuar aprendiendo...</h1>
-  
-  <app-card-course-learning class="grid grid-cols-3 gap-4 mb-4" />
-  
-  <h1 class="text-2xl font-bold mb-3">Explorar nuevas categorias</h1>
-  
-  <app-categories-card class="grid grid-cols-3 gap-4 mb-4" />
+  <p class="text-2xl font-bold mb-4">Continuar aprendiendo...</p>
+
+  <app-card-course-learning class="grid grid-cols-3 gap-4 mb-8" />
+
+  <p class="text-2xl font-bold mb-4">Explorar nuevas categorias</p>
+
+  <app-categories-card class="grid grid-cols-5 gap-4 mb-8" />
+
+  <div class="flex justify-between">
+    <p class="text-2xl font-bold mb-4">Reseñas populares</p>
+    <p-button label="Ver todas" [outlined]="true" severity="secondary" />
+  </div>
 </main>

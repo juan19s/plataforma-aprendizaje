@@ -21,13 +21,13 @@ export class CardCourseLearningComponent {
       id: 2,
       title: 'Master React',
       description: 'Become proficient in React with our comprehensive course',
-      image: 'assets/images/card_prog.png',
+      image: 'assets/images/card_react.png',
     },
     {
       id: 3,
       title: 'Explore Vue.js',
       description: 'Dive into Vue.js and build amazing applications',
-      image: 'assets/images/card_prog.png',
+      image: 'assets/images/card_vuejs.jpeg',
     },
   ];
 }
