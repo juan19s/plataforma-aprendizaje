@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { RatingModule } from 'primeng/rating';
 import { BadgeModule } from 'primeng/badge';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-card-review',
   standalone: true,
-  imports: [ButtonModule, RatingModule, FormsModule, BadgeModule],
+  imports: [ButtonModule, RatingModule, FormsModule, BadgeModule, TagModule],
   templateUrl: './card-review.component.html',
   styleUrl: './card-review.component.css',
 })

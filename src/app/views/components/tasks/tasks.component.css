@@ -1,0 +1,4 @@
+.border-rigth {
+  /* border-left-width: 2px; */
+  border-left: 4px solid var(--wewak-500);
+}

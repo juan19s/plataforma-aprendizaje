@@ -1,16 +1,18 @@
 @for (insignia of insignias; track insignia) {
-<div class="flex">
+<div class="grid grid-cols-6 gap-x-4 items-center mb-4">
   <img
     [src]="insignia.image"
     alt="insignia Image"
-    class="w-32 h-32 object-cover"
+    class="w-20 h-20 object-cover col-span-1 col-start-2"
   />
-  <p>
-    {{ insignia.valoration }}
-  </p>
-  <p>
-    {{ insignia.categorie }}
-  </p>
+  <div class="flex flex-col col-span-2 col-start-4">
+    <p>
+      {{ insignia.valoration }}
+    </p>
+    <p>
+      {{ insignia.categorie }}
+    </p>
+  </div>
 </div>
 
 }

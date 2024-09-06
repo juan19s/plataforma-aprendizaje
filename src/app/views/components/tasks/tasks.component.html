@@ -1,1 +1,11 @@
-<p>tareas works!</p>
+@for (task of tasks; track task) {
+<div
+  class="flex justify-between py-4 text-xs border-rigth mb-3 pl-2"
+>
+  <div class="flex flex-col">
+    <p>{{ task.name }}</p>
+    <p>{{ task.due }}</p>
+  </div>
+  <p-checkbox [(ngModel)]="checked" [binary]="true" inputId="binary" />
+</div>
+}
